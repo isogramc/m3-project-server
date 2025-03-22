@@ -1,12 +1,16 @@
-const { Schema, model } = require("mongoose");
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
 
 // TODO: Please make sure you edit the investigatorNote model to whatever makes sense in this case
 const investigatorNoteSchema = new Schema(
   {
-    name: { type: String, required: true },
+    character: String,
+    motive: String,
+    clue: String,
+    quote: String
   }
 );
 
-const investigatorNote = model("investigatorNote", investigatorNoteSchema);
+const investigatorNote = mongoose.model("InvestigatorNote", investigatorNoteSchema);
 
 module.exports = investigatorNote;

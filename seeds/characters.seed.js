@@ -8,7 +8,7 @@ const characters = require("../characters.json");
 
   // ... your code here
   mongoose
-  .connect(process.env.MONGO_URI)
+  .connect(process.env.MONGODB_URI)
   .then(x => console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`))
   .then(() => {
     Character.create(characters)
