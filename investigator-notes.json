@@ -1,0 +1,44 @@
+[
+    // Clara Chase (Wife):
+    {
+        "Motive": "Gregory had been distant and involved in shady dealings, which Clara was aware of. She may have been tired of living in his shadow and wanted the fortune for herself.",
+        "Clue": "Clara is seen nervously fiddling with her wedding ring during the investigation.",
+        "Quote": "I didn't love him, but I did marry him for a reason. Do you really think I would risk everything for a man I didn't care for? Maybe the business world got to his head more than we thought."
+    },
+    // Victor Stone (Best Friend/Business Partner):
+    {
+        "Motive": "Victor had a lot riding on his partnership with Gregory, but their latest deal was on the verge of falling apart, and Gregory was pulling away. Maybe he wanted to take Gregory's position for himself.",
+        "Clue": "Victor was seen arguing with Gregory earlier in the evening about an important financial deal.",
+        "Quote": "Gregory wasn't the man he used to be. Always chasing the next big thing, without thinking about the people who helped him get there. Maybe someone just got fed up with it."
+    },
+    // Olivia Stone (Victor's Wife):
+    {
+        "Motive": "Olivia had a history with Gregory and may have been involved in a secret affair with him. However, things turned sour when Gregory began to pull away.",
+        "Clue": "Olivia appears unusually calm and detached during the questioning.",
+        "Quote": "Gregory was a charming man, but don't let that smile fool you. He could break hearts as easily as he broke promises. I don't know who would kill him, but I know he deserved to pay for his betrayals."
+    },
+    // Ethan King (Younger Brother):
+    {
+        "Motive": "Ethan had been trying to prove himself outside of Gregory's shadow, but Gregory had made it clear he didn't believe in Ethan's tech ventures. Ethan may have had enough of Gregory's criticism.",
+        "Clue": "Ethan is seen nervously checking his phone and muttering about a business meeting that was supposed to happen with Gregory.",
+        "Quote": "I've been trying to build something real, something my own. But Gregory always belittled my dreams, told me I wasn't cut out for success. I didn't kill him, but I don't blame anyone who might have."
+    },
+    // Rachel Carrington (Former Assistant):
+    {
+        "Motive": "Rachel had been fired under suspicious circumstances and was left in financial ruin by Gregory's ruthless decisions. She may have wanted revenge.",
+        "Clue": "A letter of termination from Gregory is found in Rachel's purse, along with a bottle of expensive perfume that she was seen wearing.",
+        "Quote": "He thought he could throw me away like trash after all I did for him. I didn't kill him, but trust me, I could have. He was a monster, and everyone here knows it."
+    },
+    // Diana Ford (Investor):
+    {
+        "Motive": "Gregory had cut her out of a major investment deal, leaving her financially embarrassed. She stood to lose a lot if Gregory's actions came to light.",
+        "Clue": "Diana is seen fiddling with a rare coin that Gregory once gave her as a symbol of their business partnership.",
+        "Quote": "He made promises to me, and then he broke them without hesitation. He knew how much was at stake for me. I didn't kill him, but I can't say I'm sad he's gone."
+    },
+    // Charlie Nash (Rival Banker):
+    {
+        "Motive": "Gregory was Charlie's biggest competition, and the two had a longstanding rivalry. Gregory's downfall could mean Charlie's rise to the top.",
+        "Clue": "Charlie is the last to arrive at the party and has a suspiciously bruised hand.",
+        "Quote": "We were never friends. Gregory and I have been at odds for years. But I had nothing to do with his death. He got what was coming to him, but I wasn't the one who pulled the trigger."
+    }
+]
