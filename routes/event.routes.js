@@ -2,7 +2,7 @@
 
 const router = require('express').Router();
 
-const Guest = require('../models/Event.model');
+const Event = require('../models/Event.model');
 
 router.get("/events", (req, res, next) => {
     Event.find().then((allEvents)=> {
@@ -12,7 +12,7 @@ router.get("/events", (req, res, next) => {
     })
   });
 
-//  POST /students  -  Creates a new student
+//  POST /events  -  Creates a new event
 router.post('/events', (req, res, next) => {
 
   const {

@@ -2,7 +2,7 @@
 
 const router = require('express').Router();
 
-const Guest = require('../models/Client.model');
+const Client = require('../models/Client.model');
 
 router.get("/clients", (req, res, next) => {
     Client.find().then((allClients)=> {

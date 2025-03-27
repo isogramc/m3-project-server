@@ -12,7 +12,7 @@ router.get("/guests", (req, res, next) => {
     })
   });
 
-//  POST /students  -  Creates a new student
+//  POST /guests  -  Creates a new guest
 router.post('/guests', (req, res, next) => {
 
   const {
