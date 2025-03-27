@@ -5,6 +5,7 @@ const Schema = mongoose.Schema;
 const characterSchema = new Schema(
   {
     name: { type: String, required: true },
+    image : String,
     role: String,
     backstory: {type: String, required: true}
   }

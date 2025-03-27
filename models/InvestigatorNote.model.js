@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 // TODO: Please make sure you edit the investigatorNote model to whatever makes sense in this case
 const investigatorNoteSchema = new Schema(
   {
-    character: String,
+    character: { type: Schema.Types.ObjectId, ref: "Character" },
     motive: String,
     clue: String,
     quote: String

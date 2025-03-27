@@ -24,6 +24,9 @@ app.use("/api", indexRoutes);
 const authRoutes = require("./routes/auth.routes");
 app.use("/auth", authRoutes);
 
+const guestRoutes = require("./routes/guest.routes");
+app.use("/api", authRoutes);
+
 app.get("/api/users/:id", isAuthenticated, (req, res, next) => {
   console.log("req.params.id", req.params.id);
   User.findById(req.params.id).then((User) => 
