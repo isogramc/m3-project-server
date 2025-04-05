@@ -2,7 +2,7 @@
 
 const router = require('express').Router();
 
-const Character = require('../models/character.model');
+const Character = require('../models/Character.model');
 
 router.get("/characters", (req, res, next) => {
     Character.find().then((allCharacters)=> {
