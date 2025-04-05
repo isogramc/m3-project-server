@@ -14,7 +14,7 @@ const app = express();
 // ℹ️ This function is getting exported from the config folder. It runs most pieces of middleware
 require("./config")(app);
 
-const { isAuthenticated } = require("./middleware");
+const { isAuthenticated, isAdmin } = require("./middleware");
 const User = require("./models/User.model");
 
 // 👇 Start handling routes here
@@ -25,9 +25,15 @@ const authRoutes = require("./routes/auth.routes");
 app.use("/auth", authRoutes);
 
 const guestRoutes = require("./routes/guest.routes");
-app.use("/api", authRoutes);
+app.use("/api", guestRoutes);
 
-app.get("/api/users/:id", isAuthenticated, (req, res, next) => {
+const characterRoutes = require("./routes/character.routes");
+app.use("/api", characterRoutes);
+
+const clientRoutes = require("./routes/client.routes");
+app.use("/api", clientRoutes);
+
+app.get("/api/users/:id", isAuthenticated, isAdmin, (req, res, next) => {
   console.log("req.params.id", req.params.id);
   User.findById(req.params.id).then((User) => 
     res.json(User)).catch((err) => {

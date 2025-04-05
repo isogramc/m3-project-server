@@ -8,7 +8,9 @@ const guestSchema = new Schema(
     lastName: String,
     email: String,
     phone: String,
-    client: { type: Schema.Types.ObjectId, ref: "Client" },
+    userId: { type: Schema.Types.ObjectId, ref: "User" },
+    eventId: { type: Schema.Types.ObjectId, ref: "Event" },
+    characterId: { type: Schema.Types.ObjectId, ref: "Character" },
   }
 );
 

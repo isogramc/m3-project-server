@@ -16,6 +16,7 @@ router.get("/clients", (req, res, next) => {
 router.post('/clients', (req, res, next) => {
 
   const {
+    userId,
     firstName,
     lastName,
     email,
@@ -27,6 +28,7 @@ router.post('/clients', (req, res, next) => {
   } = req.body; 
 
   Guest.create({ 
+    userId,
     firstName,
     lastName,
     email,

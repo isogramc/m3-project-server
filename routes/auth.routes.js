@@ -4,6 +4,7 @@ const User = require("../models/User.model");
 const router = require("express").Router();
 
 const { isAuthenticated } = require("../middleware");
+const { isAdmin } = require("../middleware");
 
 const saltRounds = 10;
 

@@ -1,11 +1,11 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-// TODO: Please make sure you edit the Client model to whatever makes sense in this case
-const clientSchema = new Schema(
+// TODO: Please make sure you edit the Character model to whatever makes sense in this case
+const eventPlannerSchema = new Schema(
   {
     userId: { type: Schema.Types.ObjectId, ref: "User" },
-    characterId: { type: Schema.Types.ObjectId, ref: "Character" },
+    image: String,
     firstName: String,
     lastName: String,
     email: String,
@@ -17,6 +17,6 @@ const clientSchema = new Schema(
   }
 );
 
-const Client = mongoose.model("Client", clientSchema);
+const EventPlanner = mongoose.model("Event Planner", eventPlannerSchema);
 
-module.exports = Client;
+module.exports = EventPlanner;
