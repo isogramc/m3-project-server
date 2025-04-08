@@ -13,7 +13,7 @@ const eventSchema = new Schema(
     eventType: {type: String, enum: ["Wedding", "Birthday", "Corporate", "Other"]}, 
     dressCode: String,
     budget: number,
-    menu: {type: String, enum: ["Buffet", "Plated", "Cocktail", "Other"]}
+    menu: {type: String, enum: ["Buffet", "Tapas", "Cocktail", "Other"]}
   }
 );
 
