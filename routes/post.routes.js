@@ -16,19 +16,15 @@ router.get("/posts", (req, res, next) => {
 router.post('/posts', (req, res, next) => {
 
   const {
-    userId,
-    title,
-    description,
-    category,
-    imageUrl
+      userId,
+      handle,
+      message
   } = req.body; 
 
   Post.create({ 
-    userId,
-    title,
-    description,
-    category,
-    imageUrl
+      userId,
+      handle,
+      message
     })
     .then((response) => res.json(response))
     .catch((err) => {
